@@ -1,0 +1,10 @@
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.querySelector('.menu');
+        const navUl = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', function() {
+          navUl.classList.toggle('show');
+          menuIcon.classList.toggle('active');
+        });
+      });

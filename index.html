@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">Ibney Tousif</a></div>
+        <ul>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quote.html">Quotes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      <div class="menu">
+          <i class="fa-solid fa-bars "></i>
+      </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="fade-in">Ibney Tousif</h1>
+            <h2 class="slide-in">Student</h2>
+            <p class="fade-in">Hello, I am a studying in <a href="https://www.bracu.ac.bd/" style="color:#64ffda" >Brac University</a>,
+              Dhaka.This is the project of <a href="https://piazza.com/bracu.ac.bd/spring2023/cse391/" style="color:#64ffda" >cse391</a> and its fun doing front-end web developement using HTML + CSS and JavaScript  
+
+               </p>
+            <div class="cta-buttons">
+              <a href="Assets\uploaded cv.pdf" class="btn primary">View Resume</a>
+              <a href="contact.html" class="btn secondary">Contact Me</a> 
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="Assets\IMG_3628-min.jpg"
+              alt="Ibney Tousif - Student"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    
+
+
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/ibneytousif"><i class="fab fa-github"></i></a>
+            
+            <a href="https://www.facebook.com/profile.php?id=100086531101769"><i class='bx bxl-facebook-circle'></i></a>
+          </div>
+          <p>&copy; 2024 Ibney Tousif Rupom. All rights reserved.</p>
+        </div>
+      </div>
+      <script>document.write( document.lastModified );</script>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.querySelector('.menu');
+        const navUl = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', function() {
+          navUl.classList.toggle('show');
+          menuIcon.classList.toggle('active');
+        });
+      });
+    </script>
+    
+  </body>
+</html>
